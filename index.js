@@ -4,12 +4,12 @@ const Numberrandom = Math.floor(Math.random() * 6 + 1);
 import inquirer from "inquirer";
 let answer = await inquirer.prompt([
     {
-        name: "please guess a num 1-6",
+        name: "number",
+        message: "please guess a number 1-6",
         type: "number",
-        messege: "please guess a num",
     }
 ]);
-if (answer.usergussednum === Numberrandom) {
+if (answer.number === Numberrandom) {
     console.log("congratulation you guessed right num");
 }
 else {
